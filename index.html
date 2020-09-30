@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <div class="jumbotron bg-primary">
-            <h2 id="site-name">Grabador de Televisión</h2>
+        <div id="header-top">
+            <h1 id="site-name">Grabador de Televisión</h1>
         </div>
     </header>
 
@@ -27,7 +27,6 @@
             <br />
         </aside>
         <header class="showcase">
-
             <h2 class="text-center">Bienvenido a GrabadorTV, tu grabador de televisión</h2>
             <p class="text-center">
                 GrabadorTV conecta con tu canal favorito y graba el contenido que elijas.
@@ -36,7 +35,6 @@
                 ¡Pero desde tu propio ordenador!
                 Controla tus grabaciones. Míralas en el ordenador o en la tele. Almacena tus programas favoritos
             </p>
-            <p></p>
             <!--<p>
                 <a href="https://www.pexels.com/es-es/foto/mano-efecto-desenfocado-sujetando-mirando-3721597/" target="_blank" >
                 (Foto de Ian Panelo en Pexels)
@@ -44,46 +42,50 @@
             </p>-->
         </header>
         <section>
-            <div class="channels">
+            <div id="main-content-table">
                 <div class="channel">
-                    <a href="#">
-                        <img src="imagenes/La1.jpg" alt="La1" width="100" height="70">
-                    </a>
-                    <h3>La1</h3>
-                    <p>
-                        El canal estatal de toda la vida
-                    </p>
-                    <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                    <div class="card card-primary">
+                        <h3>La1</h3>
+                        <a href="#">
+                            <img src="imagenes/La1.jpg" alt="La1" height="70">
+                        </a>
+                        <div class="card-block">
+                            <a href="#">Grabar</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="channel">
-                    <a href="#">
-                        <img src="imagenes/La2.jpg" alt="La2" width="100" height="70">
-                    </a>
-                    <h3>La2</h3>
-                    <p>
-                        Canal estatal de cultura
-                    </p>
-                    <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                    <div class="card card-primary">
+                        <h3>La2</h3>
+                        <a href="#">
+                            <img src="imagenes/La2.jpg" alt="La1" height="70">
+                        </a>
+                        <div class="card-block">
+                            <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="channel">
-                    <a href="#">
-                        <img src="imagenes/Tv3.jpg" alt="Tv3" width="100" height="70">
-                    </a>
-                    <h3>Tv3</h3>
-                    <p>
-                        Televisió de Catalunya
-                    </p>
-                    <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                    <div class="card card-primary">
+                        <h3>Tv3</h3>
+                        <a href="#">
+                            <img src="imagenes/Tv3.jpg" alt="La1" height="70">
+                        </a>
+                        <div class="card-block">
+                            <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="channel">
-                    <a href="#">
-                        <img src="imagenes/Antena3.jpg" alt="Antena3" width="100" height="70">
-                    </a>
-                    <h3>Antena3</h3>
-                    <p>
-                        Antena3
-                    </p>
-                    <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                    <div class="card card-primary">
+                        <h3>Antena3</h3>
+                        <a href="#">
+                            <img src="imagenes/Antena3.jpg" alt="La1" height="70">
+                        </a>
+                        <div class="card-block">
+                            <a href="#">Grabar<i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
