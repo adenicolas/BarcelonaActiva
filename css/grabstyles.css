@@ -1,0 +1,145 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 980px;
+    margin: 0px auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.2'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+article{
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 0 0 90px 90px;
+}
+
+#site-name {
+    display: block;
+    float: left;
+}
+
+nav {
+    background-color: #666;
+    height: 24px;
+    margin: 0px 50px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 20px 5px 10px;
+    border-right: 1px solid #fff;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    padding-left: 10px;
+}
+
+footer {
+    /*position: absolute;*/
+    bottom: 0px;
+    padding: 20px 0;
+}
+
+.showcase {
+    width: 100%;
+    height: 250px;
+    background: url('../imagenes/pexels-ian-panelo-3721597.jpg') no-repeat center center/cover;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+/*
+.showcase p a {
+    content: attr(title);
+    position: absolute;
+    color: #000;*/ /* Color del texto */
+    /*font-size: 14px;*/ /* Tamaño del texto */
+    /*padding: 5px;
+    right: 190px;
+    bottom: 250px;
+    text-align: right;
+    z-index: 1;
+}*/
+
+.channels {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin: 10px 0;
+}
+
+.channel {
+    border: groove;
+    display: flex;
+    flex-direction: column;
+}
+
+.channels img {
+    width: 100%;
+    height: 180px;
+}
+
+.channels img h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.channels a {
+    padding: 10px 0;
+    color: gray;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.channels a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px){
+    body {
+        width: 650px;
+        margin: 0px 10px;
+    }
+
+    nav {
+        margin: 0px 30px;
+    }
+    .showcase {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .channels {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .channel {
+        width: 75%;
+        border: groove;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        width: 90%;
+        margin: auto;
+    }
+
+}
