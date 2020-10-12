@@ -1,0 +1,108 @@
+﻿* {
+    box-sizing: border-box;
+    height: 700px;
+    margin: 0;
+}
+
+section{
+    font-family: 'Lato';
+    font-size: 3rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+    .texto > div {
+        width: 20%;
+        color: white;
+        text-align: center;
+        line-height: 40rem;
+        align-self: center;
+        margin: 2px;
+    }
+
+    .bloque1::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        width: 20%;
+        height: 100%;
+        background: white;
+        opacity: 0.05;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+        transform: skew(30deg) scaleY(1) translate(0, 0);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .bloque1 {
+        background: #244F75;
+        margin-left: 0;
+    }
+    .bloque2 {
+        background: #60BFBF;
+    }
+
+    .bloque3::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 10em;
+        width: 20%;
+        height: 100%;
+        background: white;
+        opacity: 0.05;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+        transform: skew(30deg) scaleY(1) translate(0, 0);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .bloque3:hover:before {
+        cursor: pointer;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 10.8em;
+        width: 20%;
+        height: 100%;
+        background: green;
+        opacity: 0.1;
+        -webkit-transform: skewX(0deg) scale(1) translate(0, 0);
+        transform: skewX(0deg) scale(1) translate(0, 0);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .bloque3 {
+        background: #8C4B7E;
+    }
+
+    .bloque4 {
+        background: #F8BB44;
+    }
+
+    .bloque5::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 20em;
+        width: 20%;
+        height: 100%;
+        background: white;
+        opacity: 0.05;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+        transform: skew(30deg) scaleY(1) translate(0, 0);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .bloque5 {
+        background: #F24B4B;
+        margin-right: 0;
+    }
