@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    height: 900px;
+    width: 1200px;
+    margin: 0;
+}
+
+section{
+    font-family: 'Lato';
+    font-size: 3rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+
+
+    div {
+        width: 20%;
+        color: white;
+        text-align: center;
+        line-height: 40rem;
+        align-self: center;
+        margin: 2px;
+    }
+}
+
+     @mixin bloque_before($left, $backg) {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          left: $left;
+          width: 20%;
+          height: 100%;
+          background: $backg;
+          opacity: 0.05;
+          -webkit-transform-origin: center center;
+          transform-origin: center center;
+          -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+          transform: skew(30deg) scaleY(1) translate(0, 0);
+          transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+     }
+
+     @mixin bloque_hover_before($left, $backg) {
+          cursor: pointer;
+          content: "";
+          position: absolute;
+          z-index: 1;
+          left: $left;
+          width: 20%;
+          height: 100%;
+          background: $backg;
+          opacity: 0.1;
+          -webkit-transform: skewX(0deg) scale(1) translate(-3rem, 0);
+          transform: skewX(0deg) scale(1) translate(-2.5rem, 0);
+          transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+     }
+
+    .bloque1::before {
+         @include bloque_before(0em, white);
+    }
+
+    .bloque1 {
+        background: #244F75;
+        margin-left: 0;
+    }
+
+    .bloque1:hover:before {
+         @include bloque_hover_before(0.8em, white);
+    }
+
+    .bloque2::before {
+         @include bloque_before(5em, green);
+      }
+
+    .bloque2 {
+        background: #60BFBF;
+    }
+
+     .bloque2:hover:before {
+          @include bloque_hover_before(5.8em, green);
+       }
+
+    .bloque3::before {
+         @include bloque_before(10em, white);
+    }
+
+     .bloque3 {
+            background: #8C4B7E;
+        }
+
+    .bloque3:hover:before {
+         @include bloque_hover_before(10.8em, white);
+   }
+
+     .bloque4::before {
+             @include bloque_before(15em, green);
+          }
+
+    .bloque4 {
+        background: #F8BB44;
+    }
+
+    .bloque4:hover:before {
+         @include bloque_hover_before(15.8em, green);
+  }
+
+
+    .bloque5::before {
+         @include bloque_before(20em, white);
+    }
+
+    .bloque5 {
+        background: #F24B4B;
+        margin-right: 0;
+    }
+
+    .bloque5:hover:before {
+         @include bloque_hover_before(20.8em, white);
+  }
