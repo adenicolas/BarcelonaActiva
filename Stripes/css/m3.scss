@@ -20,13 +20,40 @@ section{
         width: 20%;
         color: white;
         text-align: center;
-        line-height: 40rem;
+        line-height: 50rem;
         align-self: center;
         margin: 2px;
     }
 }
 
-     @mixin bloque_before($left, $backg) {
+$x_ini: -100%;
+$y_ini: 0;
+@for $i from 1 through 5 {
+
+    @keyframes bloque_kf#{$i} {
+        0% {
+            -webkit-transform: translate3d($x_ini, $y_ini, 0);
+            transform: translate3d($x_ini, $y_ini, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    $y_ini: 100%;
+}
+
+
+     @for $i from 1 through 5 {
+        .bloque#{$i} {
+            animation-name: bloque_kf#{$i};
+            animation-duration: 2s;
+        }
+
+    }
+    
+
+    @mixin bloque_before($left, $backg) {
           content: "";
           position: absolute;
           z-index: 1;

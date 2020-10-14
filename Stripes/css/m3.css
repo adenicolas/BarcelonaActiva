@@ -16,9 +16,69 @@ section {
     width: 20%;
     color: white;
     text-align: center;
-    line-height: 40rem;
+    line-height: 50rem;
     align-self: center;
     margin: 2px; }
+
+@keyframes bloque_kf1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes bloque_kf2 {
+  0% {
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes bloque_kf3 {
+  0% {
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes bloque_kf4 {
+  0% {
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes bloque_kf5 {
+  0% {
+    -webkit-transform: translate3d(-100%, 100%, 0);
+    transform: translate3d(-100%, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.bloque1 {
+  animation-name: bloque_kf1;
+  animation-duration: 2s; }
+
+.bloque2 {
+  animation-name: bloque_kf2;
+  animation-duration: 2s; }
+
+.bloque3 {
+  animation-name: bloque_kf3;
+  animation-duration: 2s; }
+
+.bloque4 {
+  animation-name: bloque_kf4;
+  animation-duration: 2s; }
+
+.bloque5 {
+  animation-name: bloque_kf5;
+  animation-duration: 2s; }
 
 .bloque1::before {
   content: "";
