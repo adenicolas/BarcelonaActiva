@@ -1,0 +1,42 @@
+$x_ini: -100%;
+$y_ini: 0;
+@for $i from 1 through 5 {
+
+    @keyframes bloque_kf#{$i} {
+        0% {
+            -webkit-transform: translate3d($x_ini, $y_ini, 0);
+            transform: translate3d($x_ini, $y_ini, 0);
+        }
+        100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @if $i == 1 or $i == 3 {
+        $x_ini: 0;
+        $y_ini: 100%;
+     }
+
+    @if $i == 2 {
+        $y_ini: -100%;
+    }
+
+    @if $i == 4 {
+        $x_ini: 100%;
+        $y_ini: 0;
+    }
+
+}
+
+
+    $delay: 0;
+    @for $i from 1 through 5 {
+        .bloque#{$i} {
+            animation-name: bloque_kf#{$i};
+            animation-duration: 0.7s;
+            animation-delay: $delay;
+        }
+        $delay: $delay + 0.2s;
+    }
+    

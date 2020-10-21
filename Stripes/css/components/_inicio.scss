@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    /*height: 900px;*/
+    /*width: 1200px;*/
+    margin: 0;
+}
+
+section{
+    font-family: 'Lato';
+    font-size: 3rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+
+
+    div {
+        width: 20%;
+        color: white;
+        text-align: center;
+        line-height: 50rem;
+        align-self: center;
+        margin: 2px;
+    }
+}
